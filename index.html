@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(255,255,255,0.95);
+            background: white;
             z-index: 10;
             box-shadow: 0 2px 15px rgba(0,0,0,0.08);
         }
@@ -59,10 +59,13 @@
             text-align: center;
             padding: 100px 20px 50px;
 
-            background:
+            /* PHOTO D'ENTRÉE */
+            background-image.jpg:
                 linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80")
-                center/cover;
+                url("image.jpg");
+
+            background-size: cover;
+            background-position: center;
         }
 
         .hero-content {
@@ -98,7 +101,7 @@
             background: #b87929;
         }
 
-        /* PLATS */
+        /* SECTIONS */
         section {
             padding: 80px 8%;
         }
@@ -109,6 +112,7 @@
             margin-bottom: 50px;
         }
 
+        /* MENU */
         .menu {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -129,10 +133,12 @@
             transform: translateY(-8px);
         }
 
+        /* PHOTO DES PLATS */
         .card img {
             width: 100%;
             height: 220px;
             object-fit: cover;
+            display: block;
         }
 
         .card-content {
@@ -156,6 +162,46 @@
             color: #c47f27;
         }
 
+        /* VIDÉO */
+        .video-section {
+            background: #f1e7dc;
+            text-align: center;
+        }
+
+        .video-box {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .video-box video {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        /* MUSIQUE */
+        .music-section {
+            text-align: center;
+        }
+
+        .music-box {
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .music-box p {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .music-box audio {
+            width: 100%;
+        }
+
         /* CONTACT */
         .contact {
             text-align: center;
@@ -175,7 +221,9 @@
             color: white;
         }
 
+        /* TELEPHONE */
         @media (max-width: 600px) {
+
             nav {
                 padding: 15px 5%;
             }
@@ -194,20 +242,35 @@
 
 <body>
 
+
+    <!-- ========================= -->
     <!-- MENU -->
+    <!-- ========================= -->
+
     <nav>
-        <div class="">SHALIMAR</div>
+
+        <div class="logo">
+            SHALIMAR
+        </div>
 
         <div>
             <a href="#accueil">Accueil</a>
             <a href="#menu">Menu</a>
+            <a href="#video">Vidéo</a>
             <a href="#contact">Contact</a>
         </div>
+
     </nav>
 
+
+    <!-- ========================= -->
     <!-- ACCUEIL -->
+    <!-- ========================= -->
+
     <section class="hero" id="accueil">
+
         <div class="hero-content">
+
             <h1>SHALIMAR</h1>
 
             <p>
@@ -217,70 +280,227 @@
             <a class="button" href="#menu">
                 Découvrir nos plats 🍽️
             </a>
+
         </div>
+
     </section>
 
-    <!-- MENU -->
+
+    <!-- ========================= -->
+    <!-- MENU / PLATS -->
+    <!-- ========================= -->
+
     <section id="menu">
-        <h2 class="title">Nos plats</h2>
+
+        <h2 class="title">
+            Nos plats
+        </h2>
 
         <div class="menu">
 
+
+            <!-- PLAT 1 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80">
+
+                <!-- PHOTO -->
+                <img src="photot.jpg" alt="Photo du plat">
 
                 <div class="card-content">
-                    <h3>Pizza Maison</h3>
-                    <p>Pizza préparée avec des ingrédients frais.</p>
-                    <div class="price">10 €</div>
+
+                    <h3>
+                        Pizza Maison
+                    </h3>
+
+                    <p>
+                        Pizza préparée avec des ingrédients frais.
+                    </p>
+
+                    <div class="price">
+                        10 €
+                    </div>
+
                 </div>
+
             </div>
 
+
+            <!-- PLAT 2 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80">
+
+                <!-- PHOTO -->
+                <img src="photo.jpg" alt="Photo du plat">
 
                 <div class="card-content">
-                    <h3>Salade Fraîche</h3>
-                    <p>Une salade fraîche et pleine de saveurs.</p>
-                    <div class="price">7 €</div>
+
+                    <h3>
+                        Salade Fraîche
+                    </h3>
+
+                    <p>
+                        Une salade fraîche et pleine de saveurs.
+                    </p>
+
+                    <div class="price">
+                        7 €
+                    </div>
+
                 </div>
+
             </div>
 
+
+            <!-- PLAT 3 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80">
+
+                <!-- PHOTO -->
+                <img src="logo.jpg" alt="Photo du plat">
 
                 <div class="card-content">
-                    <h3>Pâtes</h3>
-                    <p>Pâtes savoureuses préparées maison.</p>
-                    <div class="price">9 €</div>
+
+                    <h3>
+                        Pâtes
+                    </h3>
+
+                    <p>
+                        Pâtes savoureuses préparées maison.
+                    </p>
+
+                    <div class="price">
+                        9 €
+                    </div>
+
                 </div>
+
             </div>
 
+
+            <!-- PLAT 4 -->
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80">
+
+                <!-- PHOTO -->
+                <img src="photo.jpg" alt="Photo du plat">
 
                 <div class="card-content">
-                    <h3>Dessert</h3>
-                    <p>Une douceur pour terminer votre repas.</p>
-                    <div class="price">5 €</div>
+
+                    <h3>
+                        Dessert
+                    </h3>
+
+                    <p>
+                        Une douceur pour terminer votre repas.
+                    </p>
+
+                    <div class="price">
+                        5 €
+                    </div>
+
                 </div>
+
             </div>
+
 
         </div>
+
     </section>
 
+
+    <!-- ========================= -->
+    <!-- VIDÉO -->
+    <!-- ========================= -->
+
+    <section class="video-section" id="video">
+
+        <h2 class="title">
+            Découvrez Shalimar 🎥
+        </h2>
+
+        <div class="video-box">
+
+            <!-- METS TA VIDÉO ICI -->
+            <video controls>
+
+                <source
+                    src="VIDEO-RESTAURANT.mp4"
+                    type="video/mp4"
+                >
+
+                Votre navigateur ne peut pas lire cette vidéo.
+
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- MUSIQUE -->
+    <!-- ========================= -->
+
+    <section class="music-section">
+
+        <h2 class="title">
+            Notre ambiance 🎵
+        </h2>
+
+        <div class="music-box">
+
+            <p>
+                🎶 Musique de Shalimar
+            </p>
+
+            <!-- METS TA MUSIQUE ICI -->
+            <audio controls>
+
+                <source
+                    src="MUSIQUE.mp3"
+                    type="audio/mpeg"
+                >
+
+                Votre navigateur ne peut pas lire cette musique.
+
+            </audio>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
     <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <h2 class="title">Nous trouver</h2>
+    <!-- ========================= -->
 
-        <p>📍 4ruejeantherond</p>
-        <p>📞 0610700379 </p>
-        <p>🕐 Ouvert tous les jours</p>
+    <section class="contact" id="contact">
+
+        <h2 class="title">
+            Nous trouver
+        </h2>
+
+        <p>
+            📍 6 Place Saint Jean
+        </p>
+
+        <p>
+            📞 0610700379
+        </p>
+
+        <p>
+            🕐 Ouvert 7/7
+        </p>
+
     </section>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
 
     <footer>
+
         © 2026 Shalimar — Tous droits réservés
+
     </footer>
+
 
 </body>
 </html>
