@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shalimar — Restaurant</title>
+    <title>Shalimar - Restaurant Indien à Valence</title>
 
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
-
-        html {
+            box-sizing: border-box;
             scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background: #fffaf4;
-            color: #2b2118;
+            background: #fffaf3;
+            color: #2b1a12;
         }
 
         /* MENU */
@@ -28,213 +25,220 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: white;
-            z-index: 10;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-        }
-
-        .logo {
-            font-size: 27px;
-            font-weight: bold;
-            letter-spacing: 2px;
+            background: rgba(30, 15, 8, 0.95);
+            padding: 18px;
+            text-align: center;
+            z-index: 1000;
         }
 
         nav a {
-            color: #2b2118;
+            color: white;
             text-decoration: none;
-            margin-left: 25px;
+            margin: 0 18px;
             font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f5b942;
         }
 
         /* ACCUEIL */
         .hero {
-            min-height: 100vh;
+            height: 100vh;
+            min-height: 600px;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 100px 20px 50px;
 
-            /* PHOTO D'ENTRÉE */
-            background-image.jpg:
-                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                url("image.jpg");
+            /*
+            PHOTO À METTRE ICI :
+            Remplace PHOTO-ENTREE.jpg par ta photo
+            de l'entrée ou de l'extérieur du restaurant.
+            */
 
-            background-size: cover;
-            background-position: center;
+            background:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+                url("PHOTO-ENTREE.jpg") center/cover no-repeat;
         }
 
         .hero-content {
             color: white;
-            max-width: 800px;
         }
 
         .hero h1 {
-            font-size: clamp(55px, 10vw, 100px);
-            margin-bottom: 10px;
+            font-size: 75px;
             letter-spacing: 5px;
+            margin-bottom: 15px;
+            text-shadow: 0 3px 10px black;
         }
 
         .hero p {
-            font-size: 22px;
-            margin-bottom: 35px;
+            font-size: 25px;
+            margin-bottom: 30px;
         }
 
         .button {
             display: inline-block;
-            padding: 16px 32px;
-            background: #d69a45;
+            background: #d89524;
             color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
             text-decoration: none;
-            border-radius: 50px;
             font-weight: bold;
-            font-size: 17px;
             transition: 0.3s;
         }
 
         .button:hover {
-            transform: translateY(-4px);
-            background: #b87929;
+            background: #b66e0d;
+            transform: scale(1.05);
         }
 
         /* SECTIONS */
         section {
-            padding: 80px 8%;
-        }
-
-        .title {
+            padding: 90px 8%;
             text-align: center;
+        }
+
+        section h2 {
             font-size: 40px;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
+            color: #7b2d16;
         }
 
-        /* MENU */
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
+        .intro {
+            max-width: 850px;
             margin: auto;
+            font-size: 19px;
+            line-height: 1.8;
         }
 
-        .card {
-            background: white;
+        /* PHOTO RESTAURANT */
+        .restaurant-photo {
+            margin: 40px auto;
+            max-width: 900px;
+            height: 450px;
+
+            /*
+            PHOTO À METTRE ICI :
+            Mets une photo de l'intérieur du restaurant.
+            */
+
+            background:
+                url("PHOTO-INTERIEUR.jpg") center/cover no-repeat;
+
             border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* PLATS */
+        .plats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .plat {
+            background: white;
+            border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
             transition: 0.3s;
         }
 
-        .card:hover {
+        .plat:hover {
             transform: translateY(-8px);
         }
 
-        /* PHOTO DES PLATS */
-        .card img {
-            width: 100%;
+        .plat-photo {
             height: 220px;
-            object-fit: cover;
-            display: block;
+            background-size: cover;
+            background-position: center;
         }
 
-        .card-content {
-            padding: 22px;
+        /*
+        PHOTOS DES PLATS À METTRE ICI
+        */
+
+        .photo-1 {
+            background-image: url("PHOTO-PLAT-1.jpg");
         }
 
-        .card h3 {
-            font-size: 23px;
+        .photo-2 {
+            background-image: url("PHOTO-PLAT-2.jpg");
+        }
+
+        .photo-3 {
+            background-image: url("PHOTO-PLAT-3.jpg");
+        }
+
+        .photo-4 {
+            background-image: url("PHOTO-PLAT-4.jpg");
+        }
+
+        .plat-info {
+            padding: 20px;
+        }
+
+        .plat h3 {
+            color: #7b2d16;
             margin-bottom: 8px;
         }
 
-        .card p {
-            color: #777;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-
-        .price {
-            font-size: 21px;
-            font-weight: bold;
-            color: #c47f27;
-        }
-
-        /* VIDÉO */
-        .video-section {
-            background: #f1e7dc;
-            text-align: center;
-        }
-
-        .video-box {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .video-box video {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        /* MUSIQUE */
-        .music-section {
-            text-align: center;
-        }
-
-        .music-box {
-            max-width: 600px;
-            margin: auto;
-            padding: 35px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        .music-box p {
-            margin-bottom: 20px;
+        .prix {
+            color: #c47b13;
             font-size: 20px;
-        }
-
-        .music-box audio {
-            width: 100%;
+            font-weight: bold;
+            margin-top: 10px;
         }
 
         /* CONTACT */
         .contact {
-            text-align: center;
-            background: #2b2118;
+            background: #2b160d;
             color: white;
+        }
+
+        .contact h2 {
+            color: #f5b942;
         }
 
         .contact p {
+            font-size: 19px;
             margin: 12px;
-            font-size: 18px;
         }
 
+        .contact-button {
+            margin-top: 25px;
+        }
+
+        /* FOOTER */
         footer {
-            text-align: center;
-            padding: 20px;
-            background: #17110d;
+            background: #170b06;
             color: white;
+            text-align: center;
+            padding: 25px;
         }
 
-        /* TELEPHONE */
+        /* MOBILE */
         @media (max-width: 600px) {
 
-            nav {
-                padding: 15px 5%;
-            }
-
             nav a {
-                margin-left: 10px;
+                margin: 0 7px;
                 font-size: 13px;
             }
 
+            .hero h1 {
+                font-size: 50px;
+            }
+
             .hero p {
-                font-size: 18px;
+                font-size: 19px;
+            }
+
+            section {
+                padding: 70px 5%;
             }
         }
     </style>
@@ -242,43 +246,26 @@
 
 <body>
 
-
-    <!-- ========================= -->
     <!-- MENU -->
-    <!-- ========================= -->
-
     <nav>
-
-        <div class="logo">
-            SHALIMAR
-        </div>
-
-        <div>
-            <a href="#accueil">Accueil</a>
-            <a href="#menu">Menu</a>
-            <a href="#video">Vidéo</a>
-            <a href="#contact">Contact</a>
-        </div>
-
+        <a href="#accueil">Accueil</a>
+        <a href="#restaurant">Restaurant</a>
+        <a href="#plats">Plats</a>
+        <a href="#contact">Contact</a>
     </nav>
 
 
-    <!-- ========================= -->
     <!-- ACCUEIL -->
-    <!-- ========================= -->
-
     <section class="hero" id="accueil">
 
         <div class="hero-content">
 
             <h1>SHALIMAR</h1>
 
-            <p>
-                Une cuisine savoureuse, préparée avec passion.
-            </p>
+            <p>Restaurant Indien à Valence</p>
 
-            <a class="button" href="#menu">
-                Découvrir nos plats 🍽️
+            <a href="#plats" class="button">
+                Découvrir nos plats
             </a>
 
         </div>
@@ -286,37 +273,64 @@
     </section>
 
 
-    <!-- ========================= -->
-    <!-- MENU / PLATS -->
-    <!-- ========================= -->
+    <!-- RESTAURANT -->
+    <section id="restaurant">
 
-    <section id="menu">
+        <h2>Bienvenue chez Shalimar</h2>
 
-        <h2 class="title">
-            Nos plats
-        </h2>
+        <p class="intro">
+            Découvrez Shalimar, votre restaurant indien à
+            <strong>Valence 26000</strong>.
 
-        <div class="menu">
+            Une cuisine généreuse, parfumée et pleine de caractère
+            dans une ambiance chaleureuse et conviviale.
+
+            Venez découvrir les saveurs de l'Inde et partager
+            un agréable moment autour de plats préparés avec soin.
+        </p>
+
+
+        <!-- PHOTO INTERIEUR -->
+
+        <div class="restaurant-photo"></div>
+
+        <p class="intro">
+            📍 Shalimar — Restaurant indien<br>
+            Valence 26000, France
+        </p>
+
+    </section>
+
+
+    <!-- PLATS -->
+    <section id="plats">
+
+        <h2>Nos spécialités</h2>
+
+        <p class="intro">
+            Découvrez quelques-uns de nos plats.
+        </p>
+
+
+        <div class="plats">
 
 
             <!-- PLAT 1 -->
-            <div class="card">
 
-                <!-- PHOTO -->
-                <img src="photot.jpg" alt="Photo du plat">
+            <div class="plat">
 
-                <div class="card-content">
+                <div class="plat-photo photo-1"></div>
 
-                    <h3>
-                        Pizza Maison
-                    </h3>
+                <div class="plat-info">
+
+                    <h3>Nom du plat</h3>
 
                     <p>
-                        Pizza préparée avec des ingrédients frais.
+                        Description du plat à écrire ici.
                     </p>
 
-                    <div class="price">
-                        10 €
+                    <div class="prix">
+                        00,00 €
                     </div>
 
                 </div>
@@ -325,23 +339,21 @@
 
 
             <!-- PLAT 2 -->
-            <div class="card">
 
-                <!-- PHOTO -->
-                <img src="photo.jpg" alt="Photo du plat">
+            <div class="plat">
 
-                <div class="card-content">
+                <div class="plat-photo photo-2"></div>
 
-                    <h3>
-                        Salade Fraîche
-                    </h3>
+                <div class="plat-info">
+
+                    <h3>Nom du plat</h3>
 
                     <p>
-                        Une salade fraîche et pleine de saveurs.
+                        Description du plat à écrire ici.
                     </p>
 
-                    <div class="price">
-                        7 €
+                    <div class="prix">
+                        00,00 €
                     </div>
 
                 </div>
@@ -350,23 +362,21 @@
 
 
             <!-- PLAT 3 -->
-            <div class="card">
 
-                <!-- PHOTO -->
-                <img src="logo.jpg" alt="Photo du plat">
+            <div class="plat">
 
-                <div class="card-content">
+                <div class="plat-photo photo-3"></div>
 
-                    <h3>
-                        Pâtes
-                    </h3>
+                <div class="plat-info">
+
+                    <h3>Nom du plat</h3>
 
                     <p>
-                        Pâtes savoureuses préparées maison.
+                        Description du plat à écrire ici.
                     </p>
 
-                    <div class="price">
-                        9 €
+                    <div class="prix">
+                        00,00 €
                     </div>
 
                 </div>
@@ -375,23 +385,21 @@
 
 
             <!-- PLAT 4 -->
-            <div class="card">
 
-                <!-- PHOTO -->
-                <img src="photo.jpg" alt="Photo du plat">
+            <div class="plat">
 
-                <div class="card-content">
+                <div class="plat-photo photo-4"></div>
 
-                    <h3>
-                        Dessert
-                    </h3>
+                <div class="plat-info">
+
+                    <h3>Nom du plat</h3>
 
                     <p>
-                        Une douceur pour terminer votre repas.
+                        Description du plat à écrire ici.
                     </p>
 
-                    <div class="price">
-                        5 €
+                    <div class="prix">
+                        00,00 €
                     </div>
 
                 </div>
@@ -404,103 +412,38 @@
     </section>
 
 
-    <!-- ========================= -->
-    <!-- VIDÉO -->
-    <!-- ========================= -->
-
-    <section class="video-section" id="video">
-
-        <h2 class="title">
-            Découvrez Shalimar 🎥
-        </h2>
-
-        <div class="video-box">
-
-            <!-- METS TA VIDÉO ICI -->
-            <video controls>
-
-                <source
-                    src="VIDEO-RESTAURANT.mp4"
-                    type="video/mp4"
-                >
-
-                Votre navigateur ne peut pas lire cette vidéo.
-
-            </video>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- MUSIQUE -->
-    <!-- ========================= -->
-
-    <section class="music-section">
-
-        <h2 class="title">
-            Notre ambiance 🎵
-        </h2>
-
-        <div class="music-box">
-
-            <p>
-                🎶 Musique de Shalimar
-            </p>
-
-            <!-- METS TA MUSIQUE ICI -->
-            <audio controls>
-
-                <source
-                    src="MUSIQUE.mp3"
-                    type="audio/mpeg"
-                >
-
-                Votre navigateur ne peut pas lire cette musique.
-
-            </audio>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
     <!-- CONTACT -->
-    <!-- ========================= -->
-
     <section class="contact" id="contact">
 
-        <h2 class="title">
-            Nous trouver
-        </h2>
+        <h2>Nous contacter</h2>
 
-        <p>
-            📍 6 Place Saint Jean
-        </p>
+        <p>📍 Valence 26000, France</p>
 
-        <p>
-            📞 0610700379
-        </p>
+        <p>🍛 Restaurant indien Shalimar</p>
 
-        <p>
-            🕐 Ouvert 7/7
-        </p>
+        <!-- REMPLACE LE NUMÉRO PAR LE VRAI NUMÉRO -->
+
+        <p>📞 00 00 00 00 00</p>
+
+        <div class="contact-button">
+
+            <a
+                href="tel:0000000000"
+                class="button">
+                📞 Nous appeler
+            </a>
+
+        </div>
 
     </section>
 
 
-    <!-- ========================= -->
     <!-- FOOTER -->
-    <!-- ========================= -->
-
     <footer>
 
-        © 2026 Shalimar — Tous droits réservés
+        © 2026 Shalimar — Restaurant Indien à Valence
 
     </footer>
-
 
 </body>
 </html>
