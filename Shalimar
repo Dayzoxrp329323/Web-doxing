@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shalimar - Restaurant Indien à Valence</title>
+    <title>Shalimar - 6 Place Saint Jean 26000 Valence</title>
 
     <style>
         * {
@@ -292,7 +292,7 @@
 
         <!-- PHOTO INTERIEUR -->
 
-        <div class="restaurant-photo"></div>
+        <div class="iamge.jpg"></div>
 
         <p class="intro">
             📍 Shalimar — Restaurant indien<br>
@@ -353,7 +353,7 @@
                     </p>
 
                     <div class="prix">
-                        00,00 €
+                      
                     </div>
 
                 </div>
@@ -375,8 +375,8 @@
                         Description du plat à écrire ici.
                     </p>
 
-                    <div class="prix">
-                        00,00 €
+                    <div 
+                        
                     </div>
 
                 </div>
@@ -423,12 +423,12 @@
 
         <!-- REMPLACE LE NUMÉRO PAR LE VRAI NUMÉRO -->
 
-        <p>📞 00 00 00 00 00</p>
+        <p>📞 0610700379</p>
 
         <div class="contact-button">
 
             <a
-                href="tel:0000000000"
+                href="tel:0610700379"
                 class="button">
                 📞 Nous appeler
             </a>
@@ -441,7 +441,7 @@
     <!-- FOOTER -->
     <footer>
 
-        © 2026 Shalimar — Restaurant Indien à Valence
+        © 2026 Shalimar — Restaurant Indien à Valence 6 Place Saint Jean 26000 Valence
 
     </footer>
 
