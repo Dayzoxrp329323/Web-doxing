@@ -395,7 +395,7 @@ html = r'''<!DOCTYPE html>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-phone" href="tel:+33970351774">📞 0610700379</a>
+    <a class="nav-phone" href="tel:+330610700379">📞 0610700379</a>
   </div>
 </header>
 
@@ -440,7 +440,7 @@ html = r'''<!DOCTYPE html>
         <article class="info-card">
           <div class="icon">📞</div>
           <h3>Réserver / appeler</h3>
-          <p><a href="tel:+33970351774">0610700379</a></p>
+          <p><a href="tel:+330610700379">0610700379</a></p>
         </article>
 
         <article class="info-card">
@@ -632,7 +632,7 @@ html = r'''<!DOCTYPE html>
         <a class="btn btn-primary" href="https://www.restaurant-indien-valence.fr/carte.php" target="_blank" rel="noopener">
           📖 Voir toute la carte
         </a>
-        <a class="btn btn-dark" href="tel:+33970351774">📞 Réserver</a>
+        <a class="btn btn-dark" href="tel:+330610700379">📞 Réserver</a>
       </div>
     </div>
   </section>
@@ -684,7 +684,7 @@ html = r'''<!DOCTYPE html>
           >
             📍 Itinéraire
           </a>
-          <a class="btn btn-dark" href="tel:+33970351774">📞 Appeler</a>
+          <a class="btn btn-dark" href="tel:+330610700379">📞 Appeler</a>
         </div>
       </div>
     </div>
