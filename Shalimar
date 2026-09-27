@@ -395,7 +395,7 @@ html = r'''<!DOCTYPE html>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-phone" href="tel:+33970351774">📞 0610700379</a>
+    <a class="nav-phone" href="tel:+330610700379">📞 0610700379</a>
   </div>
 </header>
 
