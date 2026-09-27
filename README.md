@@ -395,7 +395,7 @@ html = r'''<!DOCTYPE html>
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-phone" href="tel:+33970351774">📞 09 70 35 17 74</a>
+    <a class="nav-phone" href="tel:+33970351774">📞 0610700379</a>
   </div>
 </header>
 
@@ -414,7 +414,7 @@ html = r'''<!DOCTYPE html>
 
       <div class="buttons">
         <a class="btn btn-primary" href="#menu">🍛 Voir les plats</a>
-        <a class="btn btn-dark" href="tel:+33970351774">📞 Appeler le restaurant</a>
+        <a class="btn btn-dark" href="tel:+330610700379">📞 Appeler le restaurant</a>
       </div>
     </div>
   </section>
@@ -440,7 +440,7 @@ html = r'''<!DOCTYPE html>
         <article class="info-card">
           <div class="icon">📞</div>
           <h3>Réserver / appeler</h3>
-          <p><a href="tel:+33970351774">09 70 35 17 74</a></p>
+          <p><a href="tel:+33970351774">0610700379</a></p>
         </article>
 
         <article class="info-card">
@@ -672,7 +672,7 @@ html = r'''<!DOCTYPE html>
           <div class="eyebrow">📍 Valence 26000</div>
           <h2>Venez au Shalimar</h2>
           <p>6 Place Saint-Jean, 26000 Valence</p>
-          <p>📞 <a href="tel:+33970351774">09 70 35 17 74</a></p>
+          <p>📞 <a href="tel:+330610700379">0610700379</a></p>
         </div>
 
         <div class="buttons">
